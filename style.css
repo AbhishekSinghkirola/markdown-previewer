@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  padding-block: 20px;
+  color: rgba(234, 88, 12, 1);
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  height: 80vh;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+#editor,
+#previewer {
+  width: 50%;
+  border: 2px solid rgba(234, 88, 12, 1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+#editor textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  resize: none;
+  font-size: 20px;
+  color: white;
+  flex: 1;
+  padding: 10px;
+}
+
+#editor textarea:focus {
+  outline: none;
+}
+
+#preview-screen {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#preview-screen li {
+  margin-left: 20px;
+}
+
+#preview-screen code {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#editor > h2,
+#previewer > h2 {
+  padding: 10px;
+}
+
+#editor h2 {
+  position: relative;
+}
+
+.markdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#reset-markdown {
+  background-color: rgba(234, 88, 12, 1);
+  display: inline-block;
+  height: max-content;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #editor,
+  #previewer {
+    width: 100%;
+    height: 100vh;
+  }
+}
