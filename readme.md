@@ -15,18 +15,19 @@ A simple Markdown Previewer that allows users to write Markdown syntax and see t
   - Code Blocks (both inline and multi-line) with syntax highlighting.
 
 ## Screenshots
+![ss](https://github.com/user-attachments/assets/fd710a8d-47f3-4b85-856e-8b640bf4ac3c)
 
 ## Deployment
 
 You can try the live version of the Markdown Previewer here:
-[Live Demo](https://your-deployment-link.com)
+[Live Demo](https://abhishek-markdown-previewer.netlify.app/)
 
 ## Installation & Usage
 
 ### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/markdown-previewer.git
+git clone https://github.com/AbhishekSinghkirola/markdown-previewer
 ```
 
 ### 2. Move to the Project Folder
